@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>    
-    <button id="scissors">Scissors</button>
+
+<div class="container">
+
+        <div class="btn-area">
+            <h3>Choose one </h3>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>    
+            <button id="scissors">Scissors</button>
+        </div> 
+
+        <div class="board"></div>
+
+    <div class="display-area">
+
+        <div class="human">
+            <h3>You</h3>
+            <div class="screen-human"></div>
+            <div class="score-human"></div>
+        </div>
+
+        <div class="computer">
+            <h3>Computer</h3>
+            <div class="screen-computer"></div>
+            <div class="score-computer"></div>
+        </div>
+        
+    </div>
+
+</div>
+
 
     <script src="main.js"></script>
 </body>

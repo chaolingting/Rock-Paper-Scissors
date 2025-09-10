@@ -1,0 +1,124 @@
+*{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 80px auto;
+}
+
+
+button{
+    padding: 12px 32px;
+    font-size: 1.25rem;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+
+button:hover{
+    background-color: gray;
+    color: white;
+}
+
+h1{
+    font-size: 2rem;
+
+}
+
+h3{
+    padding: 0 24px;
+    margin: 24px;
+
+}
+
+.container{
+text-align: center;
+
+}
+
+.display-area{
+    margin-bottom: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-area{
+    margin-bottom: 40px;
+
+}
+
+.human{
+    border: 1px solid salmon;
+    width: 200px;
+    margin: 20px;
+    padding: 40px;
+}
+
+.human h3{
+    margin: 0 20px;
+    padding-bottom: 8px;
+}
+
+.computer{
+    border: 1px solid steelblue;
+    width: 200px;
+    margin: 20px;
+    padding: 40px;
+}
+
+.computer h3{
+    margin: 0 20px;
+    padding-bottom: 8px;
+
+}
+
+
+.screen{
+    border: 1px solid pink;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+}
+
+
+.win-text{
+    font-size: 1.25rem;
+    color: olivedrab;
+    font-weight: bold;
+}
+
+
+.lose-text{
+    font-size: 1.25rem;
+    color: darkred;
+    font-weight: bold;
+}
+
+.tie-text{
+    font-size: 1.25rem;
+    color: gray;
+    font-weight: bold;
+}
+
+
+.chosen-btn-human{
+    font-size: 1.25rem;
+    color: orangered;
+    font-weight: bold;
+}
+
+.chosen-btn-computer{
+    font-size: 1.25rem;
+    color: steelblue;
+    font-weight: bold;
+}
+
+.score{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
