@@ -33,39 +33,56 @@ function getComputerChoice(){
 }
 
 
+function handleChoice(humanChoice){
+    screenHuman.innerText = humanChoice;
+    screenHuman.className = "chosen-btn-human";
 
-btnRock.addEventListener("click", () => {
-    const humanChoice = "Rock";
-    screenHuman.innerText = "Rock"; 
-    screenHuman.className = "chosen-btn-human"
     const computerChoice = getComputerChoice();
     screenComputer.textContent = computerChoice;
-    screenComputer.className = "chosen-btn-computer"
+    screenComputer.className = "chosen-btn-computer";
+
     playRound(humanChoice, computerChoice);
+}
 
-    })
 
-btnScissors.addEventListener("click", () => {
-    const humanChoice = "Scissors";
-    screenHuman.innerText = `${humanChoice}`; 
-    screenHuman.className = "chosen-btn-human"
-    const computerChoice = getComputerChoice();
-    screenComputer.textContent = computerChoice;
-    screenComputer.className = "chosen-btn-computer"
-    playRound(humanChoice, computerChoice);
+btnRock.addEventListener('click', () => handleChoice("Rock"));
+btnPaper.addEventListener('click', () => handleChoice("Paper"));
+btnScissors.addEventListener('click', () => handleChoice("Scissors"));
 
-    })
+//btnRock.addEventListener("click", () => {
+//    const humanChoice = "Rock";
+//    screenHuman.innerText = "Rock"; 
+//    screenHuman.className = "chosen-btn-human"
 
-btnPaper.addEventListener("click", () => {
-    const humanChoice = "Paper";
-    screenHuman.innerText = "Paper"; 
-    screenHuman.className = "chosen-btn-human"
-    const computerChoice = getComputerChoice();
-    screenComputer.textContent = computerChoice;
-    screenComputer.className = "chosen-btn-computer"
-    playRound(humanChoice, computerChoice);
+//    const computerChoice = getComputerChoice();
+//    screenComputer.textContent = computerChoice;
+//    screenComputer.className = "chosen-btn-computer"
 
-    })
+//    playRound(humanChoice, computerChoice);
+
+//    })
+
+//btnScissors.addEventListener("click", () => {
+//    const humanChoice = "Scissors";
+//    screenHuman.innerText = `${humanChoice}`; 
+//    screenHuman.className = "chosen-btn-human"
+//    const computerChoice = getComputerChoice();
+//    screenComputer.textContent = computerChoice;
+//    screenComputer.className = "chosen-btn-computer"
+//    playRound(humanChoice, computerChoice);
+
+//    })
+
+//btnPaper.addEventListener("click", () => {
+//    const humanChoice = "Paper";
+//    screenHuman.innerText = "Paper"; 
+//    screenHuman.className = "chosen-btn-human"
+//    const computerChoice = getComputerChoice();
+//    screenComputer.textContent = computerChoice;
+//    screenComputer.className = "chosen-btn-computer"
+//    playRound(humanChoice, computerChoice);
+
+//   })
 
 
 
